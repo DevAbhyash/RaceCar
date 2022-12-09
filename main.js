@@ -34,9 +34,20 @@ class Car {
     }
 }
 let car = new Car("30px", "40px");
+
 leftButton.addEventListener("click", function() {
     car.steerLeft();
 });
 rightButton.addEventListener("click", function() {
     car.steerRight();
 });
+
+class Enemy {
+    constructor() {}
+    generateEnemy() {
+        let random = Math.floor(Math.random() * (400 - 170) + 170);
+        console.log(random);
+    }
+}
+let enemy = new Enemy();
+enemy.generateEnemy();
